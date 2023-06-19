@@ -1,5 +1,23 @@
-# Complain Classification
+# Problem Statement 
 
+A model need to build that is able to classify customer complaints based on the products/services. By doing so, the complain tickets can segregate into their relevant categories and, therefore, help in the quick resolution of the issue.
+
+The topic modelling on the <b>.json</b> data provided by the company. Since this data is not labelled, it is need to apply NMF to analyse patterns and classify tickets into the following five clusters based on their products/services:
+
+* Credit card / Prepaid card
+
+* Bank account services
+
+* Theft/Dispute reporting
+
+* Mortgages/loans
+
+* Others 
+
+
+Each ticket can be mapped onto its respective department/category with the help of topic modelling. The data obtained can be used to train any supervised model such as logistic regression, decision tree, or random forest. By using this trained model, any new customer complaint support ticket can be classified into its relevant department.
+
+# Complain Classification
 This Python script performs complain classification based on customer complaints regarding products/services. The goal is to classify each complaint into one of the following categories: Credit card/Prepaid card, Bank account services, Theft/Dispute reporting, Mortgages/loans, and Others. The script utilizes topic modeling using NMF (Non-Negative Matrix Factorization) to identify patterns and assign categories to the complaints. The overall pipeline consists of the following steps:
 
 1. Data loading: The script loads complaint data in JSON format and converts it into a DataFrame.
